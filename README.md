@@ -1,4 +1,4 @@
-# Ansible Operator - PySimple
+# Ansible Operator for PySimple
 Minimal files to form a functional operator. In this early version
 we just introduce the conventional `build` and `deploy` directories.
 There should be much more for testing but, for now, this is all we need.
