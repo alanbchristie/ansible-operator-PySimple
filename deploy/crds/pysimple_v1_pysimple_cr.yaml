@@ -1,0 +1,6 @@
+apiVersion: pysimple.alanbchristie/v1
+kind: PySimple
+metadata:
+  name: pysimple
+spec:
+  size: 1

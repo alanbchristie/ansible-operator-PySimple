@@ -1,5 +1,5 @@
 ---
 - version: v1
-  group: alanbchristie
+  group: pysimple.alanbchristie
   kind: PySimple
-  role: /opt/ansible/roles/pysimple
+  role: /opt/ansible/roles/alanbchristie.pysimple

@@ -15,8 +15,32 @@ building and deploying operators.
 
 First, build and push the operator: -
 
-    $ docker build -t alanbchristie/operator-pysimple -f build/Dockerfile .
-    $ docker push alanbchristie/operator-pysimple
+    docker build -t alanbchristie/operator-pysimple -f build/Dockerfile .
+    docker push alanbchristie/operator-pysimple
+
+## Deploying (Kubernetes)
+
+Deploy the CRD: -
+
+    kubectl create -f deploy/crds/pysimple_v1_pysimple_crd.yaml
+
+Create and move to a new namespace: -
+
+    kubectl create -f deploy/namespace.yaml
+    kubectl config set-context --current --namespace=pysimple
+    
+Deploy the operator: -
+
+    kubectl create -f deploy/service_account.yaml
+    kubectl create -f deploy/role.yaml
+    kubectl create -f deploy/role_binding.yaml
+    kubectl create -f deploy/operator.yaml
+
+Deploy the app: -
+
+    kubectl apply -f deploy/crds/pysimple_v1_pysimple_cr.yaml
+ 
+kubectl delete customresourcedefinitions/pysimples.pysimple.alanbchristie
 
 ---
 
