@@ -21,7 +21,11 @@ First, build and push the operator: -
         --no-cache
     $ docker push alanbchristie/operator-pysimple
 
-## Deploying (Kubernetes)
+## Deploying (Kubernetes/OpenShift)
+
+>   If deploying to OpenShift you shoud just beed to replate `kubectl`
+    with `oc` in the following commands. In fact I think `oc` can
+    also deploy to Kubernetes.
 
 Deploy the CRD: -
 
