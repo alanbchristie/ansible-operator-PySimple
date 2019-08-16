@@ -1,6 +1,8 @@
 # Ansible Operator for PySimple
 
+![GitHub](https://img.shields.io/github/license/alanbchristie/ansible-operator-pysimple)
 [![Build Status](https://travis-ci.org/alanbchristie/ansible-operator-PySimple.svg?branch=master)](https://travis-ci.org/alanbchristie/ansible-operator-PySimple)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/alanbchristie/ansible-operator-pysimple)
 
 Minimal files to form a functional operator. In this early version
 we just introduce the conventional `build` and `deploy` directories.
