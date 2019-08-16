@@ -16,5 +16,5 @@ before_script:
 - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin docker.io
 
 script:
-- docker build -t alanbchristie/operator-pysimple -f build/Dockerfile .
-- docker push alanbchristie/operator-pysimple
+- docker build -t "$DOCKER_USERNAME"/operator-pysimple -f build/Dockerfile .
+- docker push "$DOCKER_USERNAME"/operator-pysimple
