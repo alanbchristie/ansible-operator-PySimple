@@ -25,7 +25,7 @@ First, build and push the operator: -
 
 ## Deploying (Kubernetes/OpenShift)
 
->   If deploying to OpenShift you shoud just beed to replate `kubectl`
+>   If deploying to OpenShift you need to replace `kubectl`
     with `oc` in the following commands. In fact I think `oc` can
     also deploy to Kubernetes.
 
@@ -53,7 +53,15 @@ Un-deploy (which simply sets the role's `state` variable to `absent`): -
 
     $ kubectl apply -f deploy/crds/pysimple_v1_pysimple_cr_absent.yaml
 
+## Related repositories
+The following related GitHub repositories might be of interest: -
+
+-   The PySimple [GitHub] repository
+-   The PySimple Ansible Galaxy [Role]
+
 ---
 
 [ansible galaxy]: https://galaxy.ansible.com/alanbchristie/pysimple
 [ansible sdk]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
+[github]: https://github.com/alanbchristie/PySimple
+[role]: https://github.com/alanbchristie/ansible-role-PySimple
