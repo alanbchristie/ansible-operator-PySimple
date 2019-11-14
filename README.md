@@ -12,9 +12,12 @@ Our operator logic is encoded in a separate Ansible Role that's
 installed from [Ansible Galaxy] during the build. This way we keep our
 application logic and operator implementation separate.
  
-The documentation for the [Ansible SDK] has plenty of information on
-building and deploying operators, what follows is a summary of what you can
-find there.  
+-   The documentation for the [Ansible SDK] has plenty of information on
+    building and deploying operators, what follows is a summary of what you can
+    find there.
+-   There are also Deep Dive articles ([Part 1] and [Part 2])
+    on the Ansible website that help to explain the structure
+    and features of Ansible Operators.
 
 First, build and push the operator: -
 
@@ -64,4 +67,6 @@ The following related GitHub repositories might be of interest: -
 [ansible galaxy]: https://galaxy.ansible.com/alanbchristie/pysimple
 [ansible sdk]: https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
 [github]: https://github.com/alanbchristie/PySimple
+[part 1]: https://www.ansible.com/blog/kubernetes-operators-ansible-deep-dive-part-1
+[part 2]: https://www.ansible.com/blog/kubernetes-operators-ansible-deep-dive-part-2
 [role]: https://github.com/alanbchristie/ansible-role-PySimple
