@@ -59,6 +59,14 @@ rules:
   verbs:
   - get
 - apiGroups:
+  - extensions
+  resources:
+  - podsecuritypolicies
+  resourceNames:
+  - unrestricted
+  verbs:
+  - use
+- apiGroups:
   - pysimple.alanbchristie
   resources:
   - '*'
