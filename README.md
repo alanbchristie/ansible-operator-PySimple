@@ -27,11 +27,6 @@ First, build and push the operator: -
     $ docker push alanbchristie/operator-pysimple
 
 ## Deploying (Kubernetes/OpenShift)
-
->   If deploying to OpenShift you need to replace `kubectl`
-    with `oc` in the following commands. In fact I think `oc` can
-    also deploy to Kubernetes.
-
 Deploy the CRD: -
 
     $ kubectl create -f deploy/crds/pysimple_v1_pysimple_crd.yaml

@@ -4,3 +4,6 @@ metadata:
   name: pysimple
 spec:
   size: 1
+  use_persistent_volume: yes
+  volume_class: longhorn
+  image_tag: 2019.7

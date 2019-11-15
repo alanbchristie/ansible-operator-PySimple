@@ -4,3 +4,4 @@ metadata:
   name: pysimple
 spec:
   state: absent
+  use_persistent_volume: yes
