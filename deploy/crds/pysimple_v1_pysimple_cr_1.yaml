@@ -6,4 +6,4 @@ spec:
   size: 1
   use_persistent_volume: yes
   volume_class: longhorn
-  image_tag: 2019.7
+  image_tag: 2019.8
