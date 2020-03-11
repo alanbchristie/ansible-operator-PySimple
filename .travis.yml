@@ -1,4 +1,14 @@
 ---
+
+# -----------------
+# Control variables (Travis Settings)
+# -----------------
+#
+# You must also set the following: -
+#
+# DOCKER_USERNAME       If PUBLISH_IMAGES is 'yes'
+# DOCKER_PASSWORD       If PUBLISH_IMAGES is 'yes'
+
 language: minimal
 
 services:
@@ -6,15 +16,6 @@ services:
 
 env:
   global:
-  # Secure environment
-  #
-  # Docker credentials
-  # - DOCKER_USERNAME
-  # - DOCKER_PASSWORD
-  - secure: "E+rVzBcfVQQZ81D3eWMq1neHvAjHSSQRtvJSFMMIfiehxErK3TxH4c0PaMFyA4fCT0V1PPX5OguxnX56+Q9EoljtGvyNte2CQuYfChncyjLJFbWYa+Nq240d/uCwLfAih7uKVVipTKN+DDwSy2mNKcvZCy1aoVFmlvTF7SbCLzCiz/Nz7tEzKKNA9MW3mh/x4Auw0ravFNZP4Vio1ZTRs+JZODEAA24LPRefVcbHcSk1pgx53/zzvQ0XT1IwHRcv4vUWKTNAEM/yGxFnGxjQtdRgMablUchUuKbKyvkR2qyw3KNCxnOMte40HBFwo5sikSLaT7o/01zRM7is35nTxx4vw9nhQKiK8jOR/qCe5OV6H53je4hGrJs/gpeWscttKgJCHQ1A+gB1URWf/Gq4Mf9KUZ8ahHlwbXmUq/vUMOvhMz+RdUWHh0cgCFTAO6xAR6wyZjNIhMtqgbf/ay07IyypNZh+/rLsqzujR7khBClvKSEU+xpBM1tdQ6vr7HntsTG7lVnjxP24DjhtlDpa5Sgv3OUoLiQFz8z2C0IFTOpWShXONSCnkXlRTCyxU65F48iDs/1JmQCynp2rRLxyLlNHjililHfLs6KIKH7UwWoVWu+cIK0pDm5RtzjgzOgtEwoVq+aOzOem4/gXFq569Cs9Ef8EkKEhhmGPA3wmoF4="
-  - secure: "Y6Ka9NnXbbAsVh2ylY07aUFdzRCalvzMeZpAwLzGEiDVT5PwNerur4uMpIhTiE+F/XZy7IuozfRq/TcqI51o+ATsSKoj2Xuv763r+zEaWnT4w5ARiNtraGJEVV+LH2vOM0DX8TPTQ7IPmXv0fmKBFpdqA0OTSsBvaMtiCRtqRGfQ9i6zP+NrlJ3aV3EB5PgqofaM0AK2j6V4WDRjkvu2c0PAJ4iz1Cnk2Whl4an803jUxJgDQ85RLfoa9fRL4CpgD2GA07CUppiKBaD7dFNeTZc15pForkGd67FJ8u2u/ZaQkETL51o+Z+kT7byfoKlJRwNBlwzq9G517dY71yyEUKQcBUCKsnDGtQZDfiz+b3ySKyxaT+NpESfwonxEzyIEDcbzOKRWGZXoNV4VNeJ2B4ZssQ3i95qEYOUbUcrcyrKgySq1YrdHmsH/QO8oB782xtU7FabDhUTpFHV+FyN3dveFA5m6wjFVwW57O8JQR+oabEkkP6AMP3NYfS18XtwsKpZXClwaN3Oir1dq6LohTW/kyguBLy/wlgkMOGyeZbseIELXGYaoIpe2hd01v25I7W/fNFSxAXBJ/a7tyviDrt21kvqqildi6XvkXM1IfUOzzxg4XD6+rJNvmRQOelPTO4gcdYUv+TA4t/MO0zzZN/h0DuG/InUnI5taNAdirv4="
-  # Public environment
-  #
   - DOCKER_IMAGE=operator-pysimple
 
 stages:
