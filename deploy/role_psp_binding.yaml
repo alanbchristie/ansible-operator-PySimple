@@ -1,0 +1,13 @@
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: pysimple-operator-sa
+roleRef:
+  kind: Role
+  name: pysimple-operator-psp
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+- kind: ServiceAccount
+  name: pysimple-operator
+

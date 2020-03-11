@@ -43,6 +43,11 @@ Deploy the operator: -
     $ kubectl create -f deploy/role_binding.yaml
     $ kubectl create -f deploy/operator.yaml
 
+If required, provide a suitable PSP and deploy its Role and RoleBinding...
+
+    $ kubectl create -f deploy/role_psp.yaml
+    $ kubectl create -f deploy/role_psp_binding.yaml
+
 Deploy the app: -
 
     $ kubectl apply -f deploy/crds/pysimple_v1_pysimple_cr_1.yaml
