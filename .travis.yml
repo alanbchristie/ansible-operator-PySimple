@@ -4,10 +4,10 @@
 # Control variables (Travis Settings)
 # -----------------
 #
-# You must also set the following: -
+# You must set the following: -
 #
-# DOCKER_USERNAME       If PUBLISH_IMAGES is 'yes'
-# DOCKER_PASSWORD       If PUBLISH_IMAGES is 'yes'
+# DOCKER_USERNAME
+# DOCKER_PASSWORD
 
 language: minimal
 
